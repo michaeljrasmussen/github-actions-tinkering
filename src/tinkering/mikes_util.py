@@ -10,6 +10,10 @@ def mikes_add(x, y):
     logger.debug("Inside mikes_add() function in mikes_util module")
     return x + y
 
+def mikes_subtract(x, y):
+    logger.debug("Inside mikes_subtract() function in mikes_util module")
+    return x - y
+
 def mikes_mult(x, y):
     logger.debug("Inside mikes_mult() function in mikes_util module")
     return x * y   
