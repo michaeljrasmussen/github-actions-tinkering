@@ -2,7 +2,7 @@ import logging
 import pytest
 import sys
 import os
-from src.tinkering.mikes_util import mikes_add, mikes_mult
+from src.tinkering.mikes_util import mikes_add, mikes_mult, mikes_subtract
 
 
 # Uncomment below to run this module directly. Otherwise, get
@@ -16,11 +16,15 @@ from src.tinkering.mikes_util import mikes_add, mikes_mult
 
 
 def test_mikes_add():
-    mikes_add(5,5) == 10
+    assert mikes_add(5,5) == 10
+
+
+def test_mikes_subtract():
+    assert mikes_subtract(10,5) == 5   
 
 
 def test_mikes_mult():
-    mikes_mult(5,5) == 25
+    assert mikes_mult(5,5) == 25
 
 
 def main() -> None:
