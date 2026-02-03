@@ -1,10 +1,14 @@
 name: Python App Tests
 
 on:
-    pull_request:
+    # pull_request:
+    #     branches:
+    #         - main 
+    workflow_dispatch:
+    push:
         branches:
-            - main
-
+            - develop
+      
 jobs:
     test:
         runs-on: ubuntu-latest
