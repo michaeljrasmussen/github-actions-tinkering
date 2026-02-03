@@ -1,9 +1,13 @@
 name: Python App Tests
 
 on:
-    pull_request:
+    # pull_request:
+    #     branches:
+    #         - main 
+    push:
         branches:
-            - main
+            - develop
+    workflow_dispatch:
 
 jobs:
     test:
